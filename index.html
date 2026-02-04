@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ma page personnelle</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #27A1CF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            font-family: 'Comic Sans MS', cursive;
+            color: white;
+        }
+
+        h2 {
+            color: #27A1CF;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #27A1CF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #c8a51a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #27A1CF;
+            margin-top: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bienvenue sur ma page personnelle</h1>
+        <p>Étudiant en informatique</p>
+    </header>
+
+    <section>
+        <h2>À propos de moi</h2>
+        <p>
+            Je m'appelle <b>Daryl Gossan</b>.
+            Je suis étudiant en informatique en fin de cycle de licence à Pigier Côte d'Ivoire et je m'intéresse la
+            programmation, aux nouvelles technologies, à l’intelligence artificielle et à la maintenance
+            informatique.
+        </p>
+    </section>
+
+    <section>
+        <h2>Ma passion</h2>
+        <p id="passion-text">
+            Ma passion est le <b>développement informatique</b>.
+            J’aime créer des applications et comprendre comment fonctionnent
+            les systèmes numériques.
+        </p>
+
+        <button onclick="afficherPlus()">Pourquoi j’aime ça ?</button>
+
+        <p id="plus" class="hidden">
+            Le développement me passionne parce qu’il me permet de résoudre
+            des problèmes, de créer des solutions utiles et d’exprimer ma créativité
+            à travers le code.
+        </p>
+    </section>
+
+    <footer>
+        © 2026 - Ma page personnelle
+    </footer>
+
+    <script>
+        function afficherPlus() {
+            const texte = document.getElementById("plus");
+            texte.classList.toggle("hidden");
+        }
+    </script>
+
+</body>
+
+</html>
